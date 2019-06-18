@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Business Frontpage - Start Bootstrap Template</title>
+  <title>내(강아지) 소개</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -58,16 +58,16 @@
       <div class="col-lg-3">
         <h1 class="my-4">강아지 사진</h1>
         <div class="list-group">
-          <a href="#all" class="list-group-item">모두보기</a>
-          <a href="#d" class="list-group-item">달이</a>
-          <a href="#m" class="list-group-item">맹이</a>
-          <a href="#j" class="list-group-item">제리</a>
+          <a class="list-group-item active" data-toggle="pill" href="#all" aria-controls="all" aria-selected="true">모두보기</a>
+          <a class="list-group-item" data-toggle="pill" href="#d" aria-controls="d" aria-selected="false">달이</a>
+          <a class="list-group-item" data-toggle="pill" href="#m" aria-controls="m" aria-selected="false">맹이</a>
+          <a class="list-group-item" data-toggle="pill" href="#j" aria-controls="j" aria-selected="false">제리</a>
         </div>
       </div>
       <!-- /.col-lg-3 -->
 
-      <div class="col-lg-9" id="all">
-        <div class="row lists active">
+      <div class="col-lg-9 tab-pane fade show active" id="all" aria-labelledby="all">
+        <div class="row lists">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <img id="d" class="card-img-top" src="./images/d1m1.JPG" alt="">
@@ -85,7 +85,7 @@
           </div>
         </div>
         
-      <div class="col-lg-9" id="d">
+      <div class="col-lg-9 tab-pane fade" id="d" aria-labelledby="d">
         <div class="row lists">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
@@ -99,7 +99,7 @@
           </div>
         </div>
         
-      <div class="col-lg-9" id="m">
+      <div class="col-lg-9 tab-pane fade" id="m" aria-labelledby="m">
         <div class="row lists">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
@@ -108,7 +108,7 @@
           </div>
         </div>
         
-      <div class="col-lg-9" id="j">
+      <div class="col-lg-9 tab-pane fade" id="j" aria-labelledby="j">
         <div class="row lists">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
